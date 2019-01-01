@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>HackerspaceSG: the Singapore tech scene's community centre</title>
+	<meta name="description" content="HackerspaceSG is the Singapore tech scene's community centre. We are a community-operated space where people can meet up and work on their projects. If you are interested in computers, machining, technology, science, digital art or electronic art, come join us, socialise, and collaborate.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.cosmo.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M3BQNB');</script>
+	<!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3BQNB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#subpages-navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/"><span>Hackerspace.SG</span></a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="subpages-navbar">
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a><li><a href="/calendar">Calendar</a><li><a href="/connect">Connect</a><li><a href="/location">Location</a><li><a href="/membership">Membership</a><li><a href="/about">About</a><li><a href="/faq">FAQ</a>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron hsg-header">
+  <div class="highlight">
+    <img alt="Welcome to Hackerspace Singapore" class=banner src="/imgs/banner.png">
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="container">
+
+
+
+
+<div class="row">
+  <div class="col-md-6 events-block">
+    <h2>Upcoming Events</h2>
+    <ul>
+        <li>
+          <h4><a href="https:&#x2F;&#x2F;www.meetup.com&#x2F;FOSSASIA-Singapore-Open-Technology-Meetup&#x2F;events&#x2F;256340099&#x2F;"> FOSSASIA Summit 2019 After-party</a></h4>
+          
+          <time dateTime="2019-03-17T12:30:00.000Z" title="2019-03-17T12:30:00.000Z">2019-03-17T12:30:00.000Z</time>
+        </li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <a class="twitter-timeline" href="https://twitter.com/hackerspacesg" data-widget-id="415082410074599425">Tweets by @hackerspacesg</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+</div>
+<img src="/imgs/index.jpg" class="img-responsive center-block" style="width:50%" >
+
+
+  </div>
+</div>
+
+<footer>
+<p>Source: <a href=https://github.com/hackerspacesg/hackerspace.sg>On GitHub</a></p>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/moment.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('time').each(function(index){
+    d = moment($(this).attr('datetime'));
+    $(this).text(d.fromNow() + ' at ' + d.format('h:mma'));
+  });
+});
+</script>
+
+</body>
+</html>
