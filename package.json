@@ -1,9 +1,12 @@
 {
   "devDependencies": {
-    "@vuepress/plugin-blog": "^1.0.0-alpha.0",
-    "@vuepress/plugin-register-components": "^1.0.0-alpha.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/vue-fontawesome": "^0.1.4",
+    "@vuepress/plugin-active-header-links": "^1.0.0-alpha.30",
+    "@vuepress/plugin-blog": "^1.0.0-alpha.30",
+    "@vuepress/plugin-register-components": "^1.0.0-alpha.30",
     "axios": "^0.18.0",
-    "bootstrap": "^4.2.1",
     "bootstrap-vue": "^2.0.0-rc.11",
     "ellipsize": "^0.1.0",
     "get-json": "^1.0.1",
@@ -16,14 +19,15 @@
     "postcss-loader": "^3.0.0",
     "request-json": "^0.6.4",
     "sass-loader": "^7.1.0",
+    "stickyfilljs": "^2.1.0",
     "style-loader": "^0.23.1",
-    "tailwindcss": "^0.7.3",
     "vue-moment": "^4.0.0",
     "vue-tweet-embed": "^2.1.2",
-    "vuepress": "^0.14.8"
+    "vuepress": "^1.0.0-alpha.30"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
-  }
+  },
+  "dependencies": {}
 }

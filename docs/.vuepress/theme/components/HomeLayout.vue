@@ -14,12 +14,12 @@
 
 <script>
 import Timeline from 'vue-tweet-embed/timeline';
-import MarketingBanner from '../components/MarketingBanner.vue';
-import UpcomingEvents from '../components/UpcomingEvents.vue';
-import SocialMedia from '../components/SocialMedia.vue';
+import MarketingBanner from './MarketingBanner.vue';
+import UpcomingEvents from './UpcomingEvents.vue';
+import SocialMedia from './SocialMedia.vue';
 import { Layout } from 'bootstrap-vue/es/components';
 export default {
-    components: { Layout, MarketingBanner,UpcomingEvents, Timeline, SocialMedia },
-    name: 'HomeLayout'
+    name: 'HomeLayout',
+    components: { Layout, MarketingBanner, UpcomingEvents, Timeline, SocialMedia }
 }
 </script>

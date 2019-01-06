@@ -1,9 +1,9 @@
 <template>
-<b-navbar toggleable="md" type="dark" variant="dark">
+<b-navbar toggleable="md" type="dark" variant="dark" sticky=true>
 
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-  <b-navbar-brand href="#"><img :src="$withBase($site.themeConfig.logo)" alt="HackerspaceSG"> HackerspaceSG</b-navbar-brand>
+  <b-navbar-brand href="#"><img :src="$withBase($site.themeConfig.logo)" alt="HackerspaceSG"><span class="d-none d-sm-none"> HackerspaceSG</span></b-navbar-brand>
 
   <b-collapse is-nav id="nav_collapse">
 
@@ -49,4 +49,10 @@ export default {
     components: { Navbar }
 }
 
+</script>
+
+<script lang="stylus">
+nav.navbar {
+  padding: 0px;
+}
 </script>

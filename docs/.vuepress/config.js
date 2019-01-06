@@ -6,10 +6,8 @@ module.exports = {
   themeConfig: {
     logo: '/img/crest.png'
   },
-  postcss: {
-    plugins: [
-      //require("tailwindcss")("./tailwind.config.js"),
-      require("autoprefixer")
-    ]
-  }
+  head: [
+    ['link', {rel:'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css'}],
+    ['link', {rel:'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap-vue@2.0.0-rc.11/dist/bootstrap-vue.min.css'}]
+  ]
 }

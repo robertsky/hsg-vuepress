@@ -2,30 +2,29 @@
 <div class="wrapper">
   <div id="fb-root"></div>
 	<NavBar/>
+  <div class="main-body">
 	<HeroBanner/>
-    <div class="markdown-body m-10 rounded">
-
-      <component :is="layout"></component>
-      <Footer/>
-    </div>
+  <HomeLayout v-if="layout === 'home'" />
+  <PageLayout v-else-if="layout === 'page'" />
+  <Footer/>
+  </div>
 </div>
 </template>
 <script>
-import NavBar from './components/NavBar.vue';
-import Footer from './components/Footer.vue';
-import HeroBanner from './components/HeroBanner.vue';
-import HomeLayout from './layouts/HomeLayout.vue';
-import PageLayout from './layouts/PageLayout.vue';
-//import BlogLayout from './layouts/BlogLayout.vue';
-//import MembershipLayout from './layouts/MembershipLayout.vue';
-//import PageLayout from './layouts/PageLayout.vue';
+import NavBar from '../components/NavBar.vue';
+import Footer from '../components/Footer.vue';
+import HeroBanner from '../components/HeroBanner.vue';
+import HomeLayout from '../components/HomeLayout.vue';
+import PageLayout from '../components/PageLayout.vue';
+//import BlogLayout from '../components/BlogLayout.vue';
+//import MembershipLayout from '../components/MembershipLayout.vue';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 export default {
   components: { NavBar, Footer, HeroBanner, HomeLayout, PageLayout },
   computed: {
       layout() {
-      return this.$page.frontmatter.layout || 'PageLayout'
+      return this.$page.frontmatter.pagetype || 'page'
       }
   },
   created: function() {
@@ -39,6 +38,8 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-    @import './styles/theme.scss';
+<style lang="stylus">
+.main-body {
+  top: 200px;
+}
 </style>
